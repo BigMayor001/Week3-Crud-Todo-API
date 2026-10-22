@@ -1,0 +1,22 @@
+{
+  "name": "week3-crud-todo-api",
+  "version": "1.0.0",
+  "description": "My BeTechified Week3 CRUD Todo API Task.",
+  "main": "todo.js",
+  "scripts": {
+    "start": "nodemon todo.js",
+    "dev": "nodemon todo.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "dotenv": "^18.0.8",
+    "express": "^5.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
