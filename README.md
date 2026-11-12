@@ -89,6 +89,18 @@ Expected terminal output:
 Server is running on port 3001...
 ```
 
+### 5. Live API Deployment
+
+The Todo API is deployed on Render and is accessible online.
+
+Live API URL: https://week3-crud-todo-api-8u84.onrender.com
+
+## Available Live Endpoints
+
+**Get All Todos
+
+**Get Active Todos
+
 ## API Endpoints
 
 Base URL: `http://localhost:3001`
