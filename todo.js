@@ -59,7 +59,7 @@ app.post('/todos', validateTodo, (req, res, next) => {
 // GET active todos
 app.get('/todos/active', (req, res, next) => {
   try{
-    const activeTodos = todos.filter((todo) => !todo.completed === false);
+    const activeTodos = todos.filter((todo) => !todo.completed);
   res.status(200).json(activeTodos);
 
   } catch (error) {
