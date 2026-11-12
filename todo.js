@@ -1,3 +1,4 @@
+require('dotenv'). config();
 const express = require('express');
 const cors = require('cors');
 const logRequest = require('./middlewares/logger.js');
@@ -7,11 +8,11 @@ const app = express();
 
 app.use(express.json());// Parse JSON bodies
 
-const corsOptions = {
+//const corsOptions = {
   origin: 'http://localhost:3001', 
-};
+//};
    
-app.use(cors(corsOptions));
+//app.use(cors(corsOptions));
 
 app.use(logRequest);
 
@@ -101,5 +102,5 @@ app.use(errorhandler); // Error handling middleware
 
 
 
-const PORT = 3001;
-app.listen(PORT, () => console.log(`Server is running on port ${PORT}...`));
+const PORT = process.env.PORT || 3001;
+app.listen(PORT, () => (`Server is running on port ${PORT}...`));
